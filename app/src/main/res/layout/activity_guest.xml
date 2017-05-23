@@ -1,9 +1,53 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.zhoursecurity.GuestActivity">
+    android:background="@android:color/white"
+    android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+    <EditText
+        android:id="@+id/et_write_your_code"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45dp"
+        android:layout_marginEnd="@dimen/_10dp"
+        android:layout_marginStart="@dimen/_10dp"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical"
+        android:hint="@string/write_your_code"
+        android:inputType="number"
+        android:maxLength="4"
+        android:textColor="@android:color/black" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1px"
+        android:layout_marginEnd="@dimen/_10dp"
+        android:layout_marginStart="@dimen/_10dp"
+        android:background="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/btn_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_20dp"
+        android:background="@color/colorPrimary"
+        android:minHeight="@dimen/_50dp"
+        android:paddingEnd="@dimen/_10dp"
+        android:paddingStart="@dimen/_10dp"
+        android:text="@string/check"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_18sp" />
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150dp"
+        android:layout_marginTop="@dimen/_15dp"
+        android:gravity="center"
+        android:text="@string/message"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_25sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</LinearLayout>
