@@ -22,6 +22,8 @@
         <activity
             android:name=".MainActivity"
             android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".GuestActivity" />
+        <activity android:name=".SecurityActivity"></activity>
     </application>
 
 </manifest>
