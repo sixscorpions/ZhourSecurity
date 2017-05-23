@@ -4,6 +4,18 @@
     android:background="@android:color/white"
     android:orientation="vertical">
 
+    <TextView
+        android:id="@+id/tv_guest_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:minHeight="@dimen/_45dp"
+        android:text="@string/guest_check"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_17sp"
+        android:textStyle="bold" />
+
     <EditText
         android:id="@+id/et_write_your_code"
         android:layout_width="match_parent"
@@ -11,6 +23,7 @@
         android:layout_marginEnd="@dimen/_10dp"
         android:layout_marginStart="@dimen/_10dp"
         android:background="@android:color/transparent"
+        android:digits="@string/digits"
         android:gravity="center_vertical"
         android:hint="@string/write_your_code"
         android:inputType="number"
@@ -46,8 +59,22 @@
         android:gravity="center"
         android:text="@string/message"
         android:textColor="@android:color/black"
-        android:textSize="@dimen/_25sp"
-        android:textStyle="bold"
+        android:textSize="@dimen/_22sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_scan_vehicle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_20dp"
+        android:background="@color/colorPrimary"
+        android:minHeight="@dimen/_50dp"
+        android:paddingEnd="@dimen/_10dp"
+        android:paddingStart="@dimen/_10dp"
+        android:text="@string/scan_vehicle"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_18sp"
         android:visibility="gone" />
 
 </LinearLayout>
