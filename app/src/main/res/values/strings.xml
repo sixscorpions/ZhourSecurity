@@ -8,5 +8,6 @@
     <string name="guest_check">Guest Check</string>
     <string name="scan_vehicle">Scan Vehicle</string>
     <string name="scan_text">Scan Text</string>
+    <string name="rfid_scanner">RFID scanner </string>
     <string name="digits">0123456789</string>
 </resources>
